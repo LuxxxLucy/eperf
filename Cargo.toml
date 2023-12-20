@@ -1,0 +1,10 @@
+
+[workspace]
+# members = ["./egg", "./emo"]
+members = ["./epost"]
+
+[workspace.package]
+version = "0.0.1"
+rust-version = "1.70" # also change in ci.yml
+authors = ["Luxxxlucy"]
+edition = "2023"
