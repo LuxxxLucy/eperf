@@ -42,7 +42,7 @@ fn main() -> Result<()> {
 
     let start = "(/ (* a 2) 2)"
         .parse()
-        .map_err(|_| Error::Generic(std::format!("egg parse init expression failed.")))?;
+        .map_err(|_| Error::Generic("egg parse init expression failed.".to_string()))?;
 
     // Run equality saturation
     let runner = Runner::default().with_expr(&start).run(rules);
