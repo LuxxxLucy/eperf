@@ -132,9 +132,9 @@ struct KeyValuePair {
 // Enum representing different types of log records
 #[derive(Debug)]
 enum LogRecordType {
-    Start,
-    End,
-    Simple,
+    START,
+    END,
+    SIMPLE,
 }
 
 // Structure representing a single log record
@@ -209,9 +209,9 @@ fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
             time: time.to_string(),
             arguments,
             record_type: match action {
-                "START" => LogRecordType::Start,
-                "END" => LogRecordType::End,
-                _ => LogRecordType::Simple,
+                "START" => LogRecordType::START,
+                "END" => LogRecordType::END,
+                _ => LogRecordType::SIMPLE,
             },
         });
 
@@ -229,7 +229,7 @@ fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
                         )));
                     }
                 } else {
-                    return Err(Error::Generic("Pop from empty stack!".to_string()));
+                    return Err(Error::Generic(std::format!("Pop from empty stack!")));
                 }
             }
             _ => {}
@@ -237,16 +237,16 @@ fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
     }
 
     if !stack.is_empty() {
-        return Err(Error::Generic(
-            "Unfinished actions remain in the stack!".to_string()
-                ));
+        return Err(Error::Generic(std::format!(
+            "Unfinished actions remain in the stack!"
+        )));
     }
 
     Ok(log_records)
 }
 
 // Formats log records into perf-style script
-fn print_perf_style_stack(stack: &[String], time: &str, result_lines: &mut Vec<String>) {
+fn print_perf_style_stack(stack: &Vec<String>, time: &str, result_lines: &mut Vec<String>) {
     use std::fmt::Write;
 
     let mut my_string = String::new();
@@ -258,12 +258,12 @@ fn print_perf_style_stack(stack: &[String], time: &str, result_lines: &mut Vec<S
     let f_counter = 1234;
     for (index, item) in stack.iter().rev().enumerate() {
         if index == 0 {
-            writeln!(my_string, "{}", header).unwrap();
+            write!(my_string, "{}\n", header).unwrap();
         }
         let source_name: &str = "egg-func-lib";
-        writeln!(my_string, "\t{} {} ([{}])", f_counter, item, source_name).unwrap();
+        write!(my_string, "\t{} {} ([{}])\n", f_counter, item, source_name).unwrap();
     }
-    writeln!(my_string).unwrap();
+    write!(my_string, "\n").unwrap();
     result_lines.push(my_string);
 }
 
@@ -283,13 +283,13 @@ fn generate_perf_style_script(log_records: &[LogRecord]) -> Result<Vec<String>> 
 
     for log_record in log_records.iter() {
         match log_record.record_type {
-            LogRecordType::Start => {
+            LogRecordType::START => {
                 stack.push(format_log_record(log_record));
                 print_perf_style_stack(&stack, &log_record.time, &mut result_lines);
             }
-            LogRecordType::End => {
+            LogRecordType::END => {
                 let Some(_last) = stack.pop() else {
-                    return Err(Error::Generic("Pop from empty stack!".to_string()));
+                    return Err(Error::Generic(std::format!("Pop from empty stack!")));
                 };
                 print_perf_style_stack(&stack, &log_record.time, &mut result_lines);
             }
