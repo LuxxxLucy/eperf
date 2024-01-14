@@ -1,0 +1,444 @@
+egg-run-program 1   16.875780:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876162:   1 cycles:
+	1234 Add new node(id=0, enode=SymbolLang { op: "a") ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876186:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876203:   1 cycles:
+	1234 Add new node(id=1, enode=SymbolLang { op: "2") ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876211:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876220:   1 cycles:
+	1234 Add new node(id=2, enode=SymbolLang { op: "*") ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876231:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876242:   1 cycles:
+	1234 Add new node(id=3, enode=SymbolLang { op: "/") ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876252:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876276:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876286:   1 cycles:
+	1234 Union(left=3, right=3) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876292:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876298:   1 cycles:
+	1234 Union(left=2, right=2) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876304:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876310:   1 cycles:
+	1234 Union(left=1, right=1) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876315:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876320:   1 cycles:
+	1234 Union(left=0, right=0) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876325:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 Add initial expr() ([egg-func-lib])
+
+
+egg-run-program 1   16.876367:   1 cycles:
+	1234 Add initial expr() ([egg-func-lib])
+
+
+
+
+egg-run-program 1   16.876380:   1 cycles:
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876536:   1 cycles:
+	1234 find matches() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876546:   1 cycles:
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876555:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876562:   1 cycles:
+	1234 Union(left=0, right=3) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876573:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876578:   1 cycles:
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876584:   1 cycles:
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876593:   1 cycles:
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876599:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876606:   1 cycles:
+	1234 Add new node(id=4, enode=SymbolLang { op: "*") ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876614:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876621:   1 cycles:
+	1234 Union(left=4, right=2) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876628:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876634:   1 cycles:
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876639:   1 cycles:
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876646:   1 cycles:
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876652:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876658:   1 cycles:
+	1234 Add new node(id=5, enode=SymbolLang { op: "1") ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876664:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876672:   1 cycles:
+	1234 Add new node(id=6, enode=SymbolLang { op: "<<") ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876679:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876686:   1 cycles:
+	1234 Union(left=6, right=2) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876693:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876699:   1 cycles:
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876704:   1 cycles:
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876711:   1 cycles:
+	1234 applied() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876719:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876725:   1 cycles:
+	1234 Union(left=6, right=6) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876731:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876736:   1 cycles:
+	1234 Union(left=5, right=5) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876742:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876747:   1 cycles:
+	1234 Union(left=4, right=4) ([egg-func-lib])
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876752:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+egg-run-program 1   16.876783:   1 cycles:
+	1234 run(Iteration=0) ([egg-func-lib])
+
+
+
+
+egg-run-program 1   16.876797:   1 cycles:
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876824:   1 cycles:
+	1234 find matches() ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876830:   1 cycles:
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876836:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876841:   1 cycles:
+	1234 Union(left=0, right=0) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876846:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876851:   1 cycles:
+	1234 apply matches(rule=cancel-multiply, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876856:   1 cycles:
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876862:   1 cycles:
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876867:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876874:   1 cycles:
+	1234 Union(left=2, right=2) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876884:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876889:   1 cycles:
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876894:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876901:   1 cycles:
+	1234 Union(left=2, right=2) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876906:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876911:   1 cycles:
+	1234 apply matches(rule=commute-mul, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876916:   1 cycles:
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876922:   1 cycles:
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876927:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876935:   1 cycles:
+	1234 Union(left=2, right=2) ([egg-func-lib])
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876940:   1 cycles:
+	1234 apply match() ([egg-func-lib])
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876945:   1 cycles:
+	1234 apply matches(rule=multi-shift, num_matches=1) ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876949:   1 cycles:
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876955:   1 cycles:
+	1234 applied() ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876961:   1 cycles:
+	1234 rebuild() ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876986:   1 cycles:
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+egg-run-program 1   16.876994:   1 cycles:
+	1234 Saturated, terminate() ([egg-func-lib])
+	1234 run(Iteration=1) ([egg-func-lib])
+
+
+
+

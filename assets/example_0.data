@@ -1,0 +1,87 @@
+EPERF_LOG [16.875780]: Add initial expr START
+EPERF_LOG [16.876162]: Add new node (id=0, enode=SymbolLang { op: "a", children: [] }) START
+EPERF_LOG [16.876186]: Add new node (id=0, enode=SymbolLang { op: "a", children: [] }) END
+EPERF_LOG [16.876203]: Add new node (id=1, enode=SymbolLang { op: "2", children: [] }) START
+EPERF_LOG [16.876211]: Add new node (id=1, enode=SymbolLang { op: "2", children: [] }) END
+EPERF_LOG [16.876220]: Add new node (id=2, enode=SymbolLang { op: "*", children: [0, 1] }) START
+EPERF_LOG [16.876231]: Add new node (id=2, enode=SymbolLang { op: "*", children: [0, 1] }) END
+EPERF_LOG [16.876242]: Add new node (id=3, enode=SymbolLang { op: "/", children: [2, 1] }) START
+EPERF_LOG [16.876252]: Add new node (id=3, enode=SymbolLang { op: "/", children: [2, 1] }) END
+EPERF_LOG [16.876276]: rebuild START
+EPERF_LOG [16.876286]: Union (left=3, right=3) START
+EPERF_LOG [16.876292]: Union (left=3, right=3) END
+EPERF_LOG [16.876298]: Union (left=2, right=2) START
+EPERF_LOG [16.876304]: Union (left=2, right=2) END
+EPERF_LOG [16.876310]: Union (left=1, right=1) START
+EPERF_LOG [16.876315]: Union (left=1, right=1) END
+EPERF_LOG [16.876320]: Union (left=0, right=0) START
+EPERF_LOG [16.876325]: Union (left=0, right=0) END
+EPERF_LOG [16.876367]: rebuild END
+EPERF_LOG [16.876373]: Add initial expr END
+EPERF_LOG [16.876380]: run (Iteration=0) START
+EPERF_LOG [16.876536]: find matches (3 matches) 
+EPERF_LOG [16.876546]: apply matches (rule=cancel-multiply, num_matches=1) START
+EPERF_LOG [16.876555]: apply match START
+EPERF_LOG [16.876562]: Union (left=0, right=3) START
+EPERF_LOG [16.876573]: Union (left=0, right=3) END
+EPERF_LOG [16.876578]: apply match END
+EPERF_LOG [16.876584]: apply matches (rule=cancel-multiply, num_matches=1) END
+EPERF_LOG [16.876593]: apply matches (rule=commute-mul, num_matches=1) START
+EPERF_LOG [16.876599]: apply match START
+EPERF_LOG [16.876606]: Add new node (id=4, enode=SymbolLang { op: "*", children: [1, 0] }) START
+EPERF_LOG [16.876614]: Add new node (id=4, enode=SymbolLang { op: "*", children: [1, 0] }) END
+EPERF_LOG [16.876621]: Union (left=4, right=2) START
+EPERF_LOG [16.876628]: Union (left=4, right=2) END
+EPERF_LOG [16.876634]: apply match END
+EPERF_LOG [16.876639]: apply matches (rule=commute-mul, num_matches=1) END
+EPERF_LOG [16.876646]: apply matches (rule=multi-shift, num_matches=1) START
+EPERF_LOG [16.876652]: apply match START
+EPERF_LOG [16.876658]: Add new node (id=5, enode=SymbolLang { op: "1", children: [] }) START
+EPERF_LOG [16.876664]: Add new node (id=5, enode=SymbolLang { op: "1", children: [] }) END
+EPERF_LOG [16.876672]: Add new node (id=6, enode=SymbolLang { op: "<<", children: [0, 5] }) START
+EPERF_LOG [16.876679]: Add new node (id=6, enode=SymbolLang { op: "<<", children: [0, 5] }) END
+EPERF_LOG [16.876686]: Union (left=6, right=2) START
+EPERF_LOG [16.876693]: Union (left=6, right=2) END
+EPERF_LOG [16.876699]: apply match END
+EPERF_LOG [16.876704]: apply matches (rule=multi-shift, num_matches=1) END
+EPERF_LOG [16.876711]: applied ({"cancel-multiply": 1, "commute-mul": 1, "multi-shift": 1}) 
+EPERF_LOG [16.876719]: rebuild START
+EPERF_LOG [16.876725]: Union (left=6, right=6) START
+EPERF_LOG [16.876731]: Union (left=6, right=6) END
+EPERF_LOG [16.876736]: Union (left=5, right=5) START
+EPERF_LOG [16.876742]: Union (left=5, right=5) END
+EPERF_LOG [16.876747]: Union (left=4, right=4) START
+EPERF_LOG [16.876752]: Union (left=4, right=4) END
+EPERF_LOG [16.876783]: rebuild END
+EPERF_LOG [16.876790]: run (Iteration=0) END
+EPERF_LOG [16.876797]: run (Iteration=1) START
+EPERF_LOG [16.876824]: find matches (3 matches) 
+EPERF_LOG [16.876830]: apply matches (rule=cancel-multiply, num_matches=1) START
+EPERF_LOG [16.876836]: apply match START
+EPERF_LOG [16.876841]: Union (left=0, right=0) START
+EPERF_LOG [16.876846]: Union (left=0, right=0) END
+EPERF_LOG [16.876851]: apply match END
+EPERF_LOG [16.876856]: apply matches (rule=cancel-multiply, num_matches=1) END
+EPERF_LOG [16.876862]: apply matches (rule=commute-mul, num_matches=1) START
+EPERF_LOG [16.876867]: apply match START
+EPERF_LOG [16.876874]: Union (left=2, right=2) START
+EPERF_LOG [16.876884]: Union (left=2, right=2) END
+EPERF_LOG [16.876889]: apply match END
+EPERF_LOG [16.876894]: apply match START
+EPERF_LOG [16.876901]: Union (left=2, right=2) START
+EPERF_LOG [16.876906]: Union (left=2, right=2) END
+EPERF_LOG [16.876911]: apply match END
+EPERF_LOG [16.876916]: apply matches (rule=commute-mul, num_matches=1) END
+EPERF_LOG [16.876922]: apply matches (rule=multi-shift, num_matches=1) START
+EPERF_LOG [16.876927]: apply match START
+EPERF_LOG [16.876935]: Union (left=2, right=2) START
+EPERF_LOG [16.876940]: Union (left=2, right=2) END
+EPERF_LOG [16.876945]: apply match END
+EPERF_LOG [16.876949]: apply matches (rule=multi-shift, num_matches=1) END
+EPERF_LOG [16.876955]: applied ({}) 
+EPERF_LOG [16.876961]: rebuild START
+EPERF_LOG [16.876986]: rebuild END
+EPERF_LOG [16.876994]: Saturated, terminate
+ 
+EPERF_LOG [16.877001]: run (Iteration=1) END
+Success: Best expression found is 'a'
