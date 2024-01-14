@@ -1,10 +1,15 @@
+[package]
+name = "epost"
+version = "0.1.0"
+edition = "2021"
 
-[workspace]
-# members = ["./egg", "./emo"]
-members = ["./epost"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[workspace.package]
-version = "0.0.1"
-rust-version = "1.70" # also change in ci.yml
-authors = ["Luxxxlucy"]
-edition = "2023"
+[dependencies]
+egg = { git = "https://github.com/LuxxxLucy/egg.git", branch = "eperf-log-br" }
+thiserror = "1"
+clap = { version = "4", features = ["cargo"] }
+
+[dev-dependencies]
+anyhow = "1"
+

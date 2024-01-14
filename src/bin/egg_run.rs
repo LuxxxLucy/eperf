@@ -30,7 +30,7 @@ fn main() -> Result<()> {
     let rules: &[Rewrite<SymbolLang, ()>] = &[
         rw!("cancel-multiply"; "(/ (* ?a ?b) ?b)" => "?a"),
         rw!("commute-mul"; "(* ?x ?y)" => "(* ?y ?x)"),
-        // rw!("multi-shift"; "(* ?x 2)" => "(<< ?x 1)"),
+        rw!("multi-shift"; "(* ?x 2)" => "(<< ?x 1)"),
         // rw!("multi-div-assoc"; "(/ (* ?x ?y) ?z)" => "(* ?x (/ ?y ?z))"),
 
         // rw!("cancel-denominator"; "(* (/ ?a ?b) ?b)" => "?a"),

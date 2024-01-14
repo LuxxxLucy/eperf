@@ -42,7 +42,7 @@ fn get_path_from_clap_matches(
 fn setup_clap_cli() -> clap::Command {
     clap::Command::new("epost")
         .bin_name("epost")
-        .about("EPOST: post-hoc analysis for equality saturation")
+        .about("EPERF: post-hoc analysis for equality saturation")
         .subcommand_required(true)
         .subcommand(
             clap::command!("script").args(&[
@@ -149,7 +149,7 @@ struct LogRecord {
 // Parses log lines into log records
 fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
     let mut lines = lines;
-    lines.retain(|line| line.starts_with("EPOST_LOG"));
+    lines.retain(|line| line.starts_with("EPERF_LOG"));
 
     let mut log_records: Vec<LogRecord> = Vec::new();
     let mut stack: Vec<String> = Vec::new();
@@ -160,9 +160,9 @@ fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
         // parsing prefix
         let prefix: Vec<&str> = parts[0].split_whitespace().collect();
         let epost_signature = prefix[0];
-        if epost_signature != "EPOST_LOG" {
+        if epost_signature != "EPERF_LOG" {
             return Err(Error::Generic(std::format!(
-                "EPOST_LOG signature is wrong in line \"{}\"",
+                "EPERF_LOG signature is wrong in line \"{}\"",
                 line
             )));
         }
