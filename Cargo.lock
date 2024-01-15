@@ -197,7 +197,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "epost"
+name = "eperf"
 version = "0.1.0"
 dependencies = [
  "anyhow",

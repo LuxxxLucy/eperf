@@ -1,4 +1,4 @@
-// Epost: post-hoc egg analysis
+// Eperf: egg perf 
 // ========================================
 //
 // Author: Jialin Lu
@@ -8,7 +8,7 @@
 //  1. Converts 'egg' library traces to a Linux perf-like script format,
 //     facilitating visualization and analysis in profiling tools.
 
-use epost::prelude::*;
+use eperf::prelude::*;
 
 fn main() -> Result<()> {
     let cmd = setup_clap_cli();
@@ -40,9 +40,9 @@ fn get_path_from_clap_matches(
 
 // Sets up the command-line interface using clap
 fn setup_clap_cli() -> clap::Command {
-    clap::Command::new("epost")
-        .bin_name("epost")
-        .about("EPERF: post-hoc analysis for equality saturation")
+    clap::Command::new("eperf")
+        .bin_name("eperf")
+        .about("EPERF: equality saturation perf")
         .subcommand_required(true)
         .subcommand(
             clap::command!("script").args(&[
@@ -159,8 +159,8 @@ fn parse_trace_lines(lines: Vec<String>) -> Result<Vec<LogRecord>> {
 
         // parsing prefix
         let prefix: Vec<&str> = parts[0].split_whitespace().collect();
-        let epost_signature = prefix[0];
-        if epost_signature != "EPERF_LOG" {
+        let eperf_signature = prefix[0];
+        if eperf_signature != "EPERF_LOG" {
             return Err(Error::Generic(std::format!(
                 "EPERF_LOG signature is wrong in line \"{}\"",
                 line

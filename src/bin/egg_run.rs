@@ -21,7 +21,7 @@
 // It applies predefined rules to the expression and optimizes it.
 // Check the output and trace logs if you've enabled them in the fork.
 
-use epost::prelude::*;
+use eperf::prelude::*;
 
 use egg::{rewrite as rw, *};
 
